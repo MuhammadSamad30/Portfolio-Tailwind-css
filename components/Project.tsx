@@ -16,7 +16,7 @@ const Project1 = () => {
     </div>
   
     <div className="animate-colorCycle bg-gradient-to-r from-purple-700 to-blue-500 text-white w-[300px] p-5 rounded-[15px] shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
-      <h3 className="text-[1.5rem] flex items-center gap-2 mb-2">I'D Card Generator <i className="bx bx-id-card"></i></h3>
+      <h3 className="text-[1.5rem] flex items-center gap-2 mb-2">I&apos;D Card Generator <i className="bx bx-id-card"></i></h3>
       <p className="text-gray-200 text-base leading-6 mb-4">Generate and download your personal ID card. Built using HTML, CSS, and JavaScript.</p>
       <a href="https://muhammad-samad-id-card-generator.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-600 no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:text-white">View Project</a>
     </div>
