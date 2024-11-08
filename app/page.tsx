@@ -1,101 +1,98 @@
+"use client";
 import Image from "next/image";
+import "boxicons/css/boxicons.min.css";
+import TypingEffect from "@/components/Typing";
+import About1 from "@/components/About";
+import Project1 from "@/components/Project";
+import Skills1 from "@/components/Skills";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col items-center">
+      <div className="flex flex-col md:flex-row items-center justify-center p-5 mt-12
+      mb-12 gap-10">
+        <div className="flex flex-col justify-start gap-2 w-full md:w-[65%] md:mt-1 text-center md:text-left">
+          <h3 className="text-lg md:text-[32px] m-0 p-0">Hey, It&apos;s me</h3>
+          <h1 className="text-lg md:text-[50px] text-[#b8b6cfd5] m-0 leading-snug p-0">
+            Muhammad Samad
+          </h1>
+          <h3 className="text-base md:text-[30px] m-0 p-0">
+            And I&apos;m a{" "}
+            <span id="multi-text" className="text-[12px] md:text-base text-white">
+              <TypingEffect />
+            </span>
+          </h3>
+          <p className="text-sm md:text-[18px] w-full md:w-[90%] lg:w-[80%] mx-auto md:mx-0">
+            A dedicated student of the Governor&apos;s Sindh IT Initiative.
+            Currently, I&apos;m deepening my expertise in Next.js and Python,
+            building a solid foundation for my journey in full-stack development
+            and emerging technologies.
+          </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <div className="flex space-x-3 mt-4 mb-4 justify-center md:justify-start">
+            <a
+              href="https://github.com/MuhammadSamad30"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center h-9 w-9 bg-transparent border border-[#e6d5c8d5] rounded-full text-2xl text-current hover:bg-[#1c0bb4d5] hover:text-white hover:shadow-[0_0_50px_#d2bbd3]"
+            >
+              <i className="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammad-samad-6b0190290/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center h-9 w-9 bg-transparent border border-[#e6d5c8d5] rounded-full text-2xl text-current hover:bg-[#1c0bb4d5] hover:text-white hover:shadow-[0_0_50px_#d2bbd3]"
+            >
+              <i className="bx bxl-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/s_a_m_a_d11/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center h-9 w-9 bg-transparent border border-[#e6d5c8d5] rounded-full text-2xl text-current hover:bg-[#1c0bb4d5] hover:text-white hover:shadow-[0_0_50px_#d2bbd3]"
+            >
+              <i className="bx bxl-instagram"></i>
+            </a>
+          </div>
+
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href=""
+            className="flex items-center justify-center px-4 py-2 bg-[#727130] rounded-lg shadow-[0_0_1rem_hsl(180,100%,50%)] text-white font-semibold transition-all duration-300 hover:shadow-none w-full sm:max-w-[50%] md:max-w-[40%] lg:max-w-[30%] mx-auto md:mx-0 mt-0"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Get Resume
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        {/* Right Side: Image */}
+        <div className="flex justify-center items-center w-full md:w-[25%] mt-8 md:mt-0">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={"/home-pic.jpeg"}
+            alt="Muhammad Samad"
+            width={500}
+            height={500}
+            className="w-full max-w-[300px] md:max-w-[350px] lg:max-w-[400px] rounded-lg shadow-[0_0_8rem_hsl(303,97%,27%)] transition-all duration-300 ease-in-out hover:shadow-none hover:scale-110"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </div>
+
+      <About1 />
+
+     <div>
+     <h1 className="flex justify-center text-[30px] md:text-[45px] font-semibold p-[1px] text-[#399fc7] font-sans mt-8">
+        Pro<span className="text-[#5e3bee]">ject</span>
+      </h1>
+      <Project1 />
+      </div> 
+
+      <div className="w-full">
+        <h1 className="flex justify-center text-[25px] md:text-[35px] font-black p-[1px] text-[#399fc7] font-sans mt-8">
+        <span className="text-[#2575fc] p-[1px]">My</span>&nbsp;Expertise
+      </h1>
+      <Skills1 />
+      </div>
     </div>
   );
-}
+};
+
+export default Home;
