@@ -31,11 +31,11 @@ const Skills1: React.FC = () => {
                   if (el) skillRefs.current[0] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="100%"
+                data-percentage="99%"
               ></div>
             </div>
           </div>
-          <span className="text-md font-semibold ml-4">100%</span>
+          <span className="text-md font-semibold ml-4">99%</span>
         </div>
 
         <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
@@ -48,11 +48,11 @@ const Skills1: React.FC = () => {
                   if (el) skillRefs.current[1] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="100%"
+                data-percentage="99%"
               ></div>
             </div>
           </div>
-          <span className="text-md font-semibold ml-4">100%</span>
+          <span className="text-md font-semibold ml-4">99%</span>
         </div>
 
         <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
@@ -65,11 +65,11 @@ const Skills1: React.FC = () => {
                   if (el) skillRefs.current[2] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="98%"
+                data-percentage="99%"
               ></div>
             </div>
           </div>
-          <span className="text-md font-semibold ml-4">98%</span>
+          <span className="text-md font-semibold ml-4">99%</span>
         </div>
 
         <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
@@ -82,11 +82,11 @@ const Skills1: React.FC = () => {
                   if (el) skillRefs.current[3] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="98%"
+                data-percentage="99%"
               ></div>
             </div>
           </div>
-          <span className="text-md font-semibold ml-4">98%</span>
+          <span className="text-md font-semibold ml-4">99%</span>
         </div>
 
         <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
@@ -96,7 +96,7 @@ const Skills1: React.FC = () => {
             <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
               <div
                 ref={(el) => {
-                  if (el) skillRefs.current[5] = el;
+                  if (el) skillRefs.current[4] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
                 data-percentage="50%"
@@ -107,13 +107,30 @@ const Skills1: React.FC = () => {
         </div>
 
         <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
+        <i className='bx bxl-tailwind-css text-4xl text-indigo-400 mr-4'></i>
+          <div className="flex-1">
+            <span className="font-semibold text-xl">Tailwind CSS</span>
+            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
+              <div
+                ref={(el) => {
+                  if (el) skillRefs.current[5] = el;
+                }}
+                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
+                data-percentage="99%"
+              ></div>
+            </div>
+          </div>
+          <span className="text-md font-semibold ml-4">99%</span>
+        </div>
+
+        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
           <i className="bx bxl-nodejs text-4xl text-indigo-400 mr-4"></i>
           <div className="flex-1">
             <span className="font-semibold text-xl">Node.js</span>
             <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
               <div
                 ref={(el) => {
-                  if (el) skillRefs.current[4] = el;
+                  if (el) skillRefs.current[6] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
                 data-percentage="35%"

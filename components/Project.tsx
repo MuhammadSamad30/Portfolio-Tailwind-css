@@ -32,6 +32,24 @@ const Project1 = () => {
       <p className="text-gray-200 text-base leading-6 mb-4">This project is based on voice commands and can answer anything you want!</p>
       <a href="https://virtual-assistant-js-by-samad.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-600 no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:text-white">View Project</a>
     </div>
+
+    <div className="animate-colorCycle bg-gradient-to-r from-purple-700 to-blue-500 text-white w-[300px] p-5 rounded-[15px] shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
+      <h3 className="text-[1.5rem] flex items-center gap-2 mb-2">E-Com Website <i className='bx bxs-store-alt'></i></h3>
+      <p className="text-gray-200 text-base leading-6 mb-4">E-commerce Website with responsive ness and Shopping cart functionality!</p>
+      <a href="https://e-commerce-website-by-samad.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-600 no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:text-white">View Project</a>
+    </div>
+
+    <div className="animate-colorCycle bg-gradient-to-r from-purple-700 to-blue-500 text-white w-[300px] p-5 rounded-[15px] shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
+      <h3 className="text-[1.5rem] flex items-center gap-2 mb-2">Blog App <i className='bx bxl-blogger'></i></h3>
+      <p className="text-gray-200 text-base leading-6 mb-4">Blog App On Next Js 15 Introduction with Fully Responsive ness</p>
+      <a href="https://basic-blog-app-by-samad.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-600 no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:text-white">View Project</a>
+    </div>
+
+    <div className="animate-colorCycle bg-gradient-to-r from-purple-700 to-blue-500 text-white w-[300px] p-5 rounded-[15px] shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
+      <h3 className="text-[1.5rem] flex items-center gap-2 mb-2">E-Com Hackathon <i className='bx bx-store'></i></h3>
+      <p className="text-gray-200 text-base leading-6 mb-4">Figma to E-Commerce Website Pixel perfect with Responsive ness! In Hackathon Event</p>
+      <a href="https://e-commerce-hackathon-by-samad.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-600 no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:text-white">View Project</a>
+    </div>
   
     <div className="animate-colorCycle bg-gradient-to-r from-purple-700 to-blue-500 text-white w-[300px] p-5 rounded-[15px] shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
         <h3 className="text-[1.5rem]">IN DEVELOPMENT</h3>
