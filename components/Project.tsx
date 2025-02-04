@@ -1,4 +1,5 @@
 import "boxicons/css/boxicons.min.css";
+import Link from "next/link";
 
 const Project1 = () => {
   return (
@@ -52,10 +53,10 @@ const Project1 = () => {
     </div>
   
     <div className="animate-colorCycle bg-gradient-to-r from-purple-700 to-blue-500 text-white w-[300px] p-5 rounded-[15px] shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
-        <h3 className="text-[1.5rem]">IN DEVELOPMENT</h3>
+        <h3 className="text-[1.5rem] mb-3">Want To See All</h3>
         <p></p>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-600 no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:text-white">View Project</a>
-      </div>
+        <Link href="/projects" className="inline-block bg-[#38d479] text-[#213d2d] no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-[#3df389]">View Project</Link>
+      </div>  
   </div>
   )
 }

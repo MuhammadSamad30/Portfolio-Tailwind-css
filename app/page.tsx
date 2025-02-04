@@ -57,7 +57,7 @@ const Home = () => {
           </div>
 
           <a
-            href=""
+            href="/"
             className="flex items-center justify-center px-4 py-2 bg-[#727130] rounded-lg shadow-[0_0_1rem_hsl(180,100%,50%)] text-white font-semibold transition-all duration-300 hover:shadow-none w-full sm:max-w-[50%] md:max-w-[40%] lg:max-w-[30%] mx-auto md:mx-0 mt-0"
           >
             Get Resume
