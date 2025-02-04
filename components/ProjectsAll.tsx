@@ -70,7 +70,7 @@ const ProjectsAll = () => {
         "E-commerce Website with responsive ness and back-end functionality!",
       link: "https://e-commerce-back-end-hackathon-by-samad.vercel.app/",
       icon: "bx bxl-shopify",
-    }
+    },
   ];
 
   return (
