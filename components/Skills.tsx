@@ -99,11 +99,11 @@ const Skills1: React.FC = () => {
                   if (el) skillRefs.current[4] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="50%"
+                data-percentage="70%"
               ></div>
             </div>
           </div>
-          <span className="text-md font-semibold ml-4">50%</span>
+          <span className="text-md font-semibold ml-4">70%</span>
         </div>
 
         <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
