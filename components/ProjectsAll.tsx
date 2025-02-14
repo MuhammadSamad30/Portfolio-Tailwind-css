@@ -71,30 +71,44 @@ const ProjectsAll = () => {
       link: "https://e-commerce-back-end-hackathon-by-samad.vercel.app/",
       icon: "bx bxl-shopify",
     },
+    {
+      title: "Dino Jumping",
+      description:
+        "Ball jumping Game like Offline Chrome Dino Game Using NextJs and Tailwind CSS",
+      link: "https://dino-clone-game-by-samad.vercel.app/",
+      icon: "bx bxs-basketball",
+    },
+    {
+      title: "Gemini Clone",
+      description:
+        "Google Gemini Clone with Responsiveness and Pixel Perfect Design",
+      link: "https://google-gemini-clone-by-samad.vercel.app/",
+      icon: "bx bxs-bot",
+    },
   ];
 
   return (
-    <div className="p-5">
-      <h2 className="text-3xl font-bold text-center mb-6">
+    <div className="p-8 bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen">
+      <h2 className="text-4xl font-extrabold text-center mb-8 text-white drop-shadow-lg">
         All <span className="text-[#ad9bf7]">P</span>rojects
       </h2>
-      <div className="flex flex-wrap gap-5 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="animate-colorCycle bg-gradient-to-r from-purple-700 to-blue-500 text-white w-[300px] p-5 rounded-[15px] shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl"
+            className="animate-colorCycle bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-6 rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
           >
-            <h3 className="text-[1.5rem] flex items-center gap-2 mb-2">
-              {project.title} <i className={`bx ${project.icon}`}></i>
+            <h3 className="text-2xl font-semibold flex items-center gap-3 mb-3">
+              <i className={`bx ${project.icon} text-3xl`}></i> {project.title}
             </h3>
-            <p className="text-gray-200 text-base leading-6 mb-4">
+            <p className="text-gray-300 text-sm leading-5 mb-4">
               {project.description}
             </p>
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 no-underline px-4 py-2 rounded-lg font-bold transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:text-white"
+              className="inline-block bg-white text-indigo-700 px-5 py-2 rounded-full font-medium transition-colors duration-300 ease-in-out hover:bg-indigo-700 hover:text-white"
             >
               View Project
             </a>
