@@ -99,21 +99,38 @@ const Skills1: React.FC = () => {
                   if (el) skillRefs.current[4] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="70%"
+                data-percentage="80%"
               ></div>
             </div>
           </div>
-          <span className="text-md font-semibold ml-4">70%</span>
+          <span className="text-md font-semibold ml-4">80%</span>
         </div>
 
         <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-        <i className='bx bxl-tailwind-css text-4xl text-indigo-400 mr-4'></i>
+          <i className="bx bxl-python text-4xl text-indigo-400 mr-4"></i>
+          <div className="flex-1">
+            <span className="font-semibold text-xl">Python</span>
+            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
+              <div
+                ref={(el) => {
+                  if (el) skillRefs.current[5] = el;
+                }}
+                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
+                data-percentage="30%"
+              ></div>
+            </div>
+          </div>
+          <span className="text-md font-semibold ml-4">30%</span>
+        </div>
+
+        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
+          <i className="bx bxl-tailwind-css text-4xl text-indigo-400 mr-4"></i>
           <div className="flex-1">
             <span className="font-semibold text-xl">Tailwind CSS</span>
             <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
               <div
                 ref={(el) => {
-                  if (el) skillRefs.current[5] = el;
+                  if (el) skillRefs.current[6] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
                 data-percentage="99%"
@@ -130,7 +147,7 @@ const Skills1: React.FC = () => {
             <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
               <div
                 ref={(el) => {
-                  if (el) skillRefs.current[6] = el;
+                  if (el) skillRefs.current[7] = el;
                 }}
                 className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
                 data-percentage="35%"
