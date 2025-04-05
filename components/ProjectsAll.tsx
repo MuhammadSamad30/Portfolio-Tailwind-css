@@ -52,6 +52,12 @@ const ProjectsAll = () => {
       title: "Next.js Projects",
       projects: [
         {
+          title: "MindMate AI Chatbot",
+          description:"A Next.js project with AI chatbot functionality.",
+          link: "https://mindmate-ai-chatbot.vercel.app/",
+          icon: "bx bxs-bot"
+        },
+        {
           title: "E-Com Website",
           description:
             "E-commerce Website with responsive ness and Shopping cart functionality!",
@@ -126,6 +132,28 @@ const ProjectsAll = () => {
           link: "https://library-manager-by-samad.streamlit.app/",
           icon: "bx bxs-book",
         },
+        {
+          title: "BMI Calculator",
+          description:
+            "Calculate your Body Mass Index (BMI) with this simple and effective tool.",
+          link: "https://bmi-calculator-by-samad.streamlit.app/",
+          icon: "bx bxs-heart",
+        },
+        // {
+        //   title: "Expense Tracker",
+        //   description:
+        //     "Track your expenses and manage your budget effectively with this simple tool.",
+        //   link: "https://expense-tracker-by-samad.streamlit.app/",
+        //   icon: "bx bx-wallet-alt",
+        // },
+        // {
+        //   title: "ChatGPT Clone",
+        //   description:
+        //     "ChatGPT Clone using Python and Streamlit with responsive ness and back-end functionality!",
+        //   link: "https://chatgpt-clone-by-samad.streamlit.app/",
+        //   icon: "bx bxs-bot",
+
+        // }
       ],
     },
   };
