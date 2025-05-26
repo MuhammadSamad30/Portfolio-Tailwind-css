@@ -5,6 +5,7 @@ import TypingEffect from "@/components/Typing";
 import About1 from "@/components/About";
 import Project1 from "@/components/Project";
 import Skills1 from "@/components/Skills";
+import ClientTestimonial from "@/components/ClientTestimonial";
 
 const Home = () => {
   return (
@@ -66,7 +67,6 @@ const Home = () => {
           </a>
         </div>
 
-        {/* Right Side: Image */}
         <div className="flex justify-center items-center w-full md:w-[25%] mt-8 md:mt-0">
           <Image
             src={"/home-pic.jpeg"}
@@ -80,18 +80,21 @@ const Home = () => {
 
       <About1 />
 
-     <div>
-     <h1 className="flex justify-center text-[30px] md:text-[45px] font-semibold p-[1px] text-[#399fc7] font-sans mt-8">
-        Pro<span className="text-[#5e3bee]">ject</span>
-      </h1>
-      <Project1 />
-      </div> 
+      <div>
+        <h1 className="flex justify-center text-[30px] md:text-[45px] font-semibold p-[1px] text-[#399fc7] font-sans mt-8">
+          Pro<span className="text-[#5e3bee]">ject</span>
+        </h1>
+        <Project1 />
+      </div>
 
       <div className="w-full">
         <h1 className="flex justify-center text-[25px] md:text-[35px] font-black p-[1px] text-[#399fc7] font-sans mt-8">
-        <span className="text-[#2575fc] p-[1px]">My</span>&nbsp;Expertise
-      </h1>
-      <Skills1 />
+          <span className="text-[#2575fc] p-[1px]">My</span>&nbsp;Expertise
+        </h1>
+        <Skills1 />
+      </div>
+      <div className="w-full">
+        <ClientTestimonial />
       </div>
     </div>
   );
