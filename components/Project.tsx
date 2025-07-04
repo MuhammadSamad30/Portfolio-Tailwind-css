@@ -1,5 +1,6 @@
 import "boxicons/css/boxicons.min.css";
 import Link from "next/link";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const projectData = [
   {
@@ -39,7 +40,7 @@ const Project1 = () => {
           shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl"
         >
           <h3 className="text-[1.5rem] flex items-center gap-2 mb-2">
-            {project.title} <i className={project.icon}></i>
+            {project.title} <i className={`${project.icon} text-[#ffb703]`}></i>
           </h3>
           <p className="text-gray-200 text-base leading-6 mb-4">{project.description}</p>
           <a 
@@ -57,7 +58,7 @@ const Project1 = () => {
       
       <div className="backdrop-blur-md bg-white/10 border border-white/20 text-white w-[300px] p-5 rounded-[15px] 
         shadow-lg transition-all duration-300 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
-        <h3 className="text-[1.5rem] mb-3">Want To See All</h3>
+        <h3 className="text-[1.5rem] flex items-center mb-3">Want To See All <FaArrowUpRightFromSquare className="pl-2 justify-center text-[#ffb703]"/> </h3>
         <p></p>
         <Link 
           href="/projects" 

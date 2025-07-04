@@ -1,163 +1,65 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { RiReactjsLine } from "react-icons/ri";
+import { BiLogoFigma } from "react-icons/bi";
+import { GrUserWorker } from "react-icons/gr";
+import { LuScanSearch } from "react-icons/lu";
+import { GiThink } from "react-icons/gi";
+import { FaBootstrap } from "react-icons/fa";
+import {
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiNextdotjs,
+  SiReact,
+  SiNodedotjs,
+  SiGit,
+  SiGithub,
+  SiSanity,
+  SiStrapi,
+  SiShadcnui
+} from "react-icons/si";
 
-const Skills1: React.FC = () => {
-  const skillRefs = useRef<(HTMLDivElement | null)[]>([]);
+const skills = [
+  { name: "HTML", icon: SiHtml5 },
+  { name: "CSS", icon: SiCss3 },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "Python", icon: SiPython },
+  { name: "NextJs", icon: SiNextdotjs },
+  { name: "ReactJs", icon: SiReact },
+  { name: "React Native", icon: RiReactjsLine },
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Git", icon: SiGit },
+  { name: "GitHub", icon: SiGithub },
+  { name: "Sanity CMS", icon: SiSanity },
+  { name: "Strapi CMS", icon: SiStrapi },
+  { name: "Shadcn UI", icon: SiShadcnui },
+  { name: "Bootstrap", icon: FaBootstrap },
+  { name: "Figma", icon: BiLogoFigma},
+  { name: "Diligent Worker", icon: GrUserWorker },
+  { name: "Problem Identification", icon: LuScanSearch },
+  { name: "Creative Thinking", icon: GiThink },
+];
 
-  useEffect(() => {
-    skillRefs.current.forEach((ref) => {
-      if (ref) {
-        const percentage = ref.getAttribute("data-percentage");
-        ref.style.width = "0%";
-
-        setTimeout(() => {
-          ref.style.transition = "width 2s ease-in-out";
-          ref.style.width = percentage || "0%";
-        }, 100);
-      }
-    });
-  }, []);
-
+const Skills1 = () => {
   return (
-    <div className="flex flex-col gap-8 p-8 max-w-full overflow-x-auto text-white">
-      <div className="flex flex-col gap-6">
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-html5 text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">HTML</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[0] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="99%"
-              ></div>
-            </div>
+    <section className="min-h-screen bg-[#0e0e0e] py-16 px-6 text-white">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {skills.map(({ name, icon: Icon }, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col items-center justify-center gap-3 p-8 rounded-xl bg-[#1a1a1a] shadow-md hover:shadow-yellow-500/20 transition duration-300"
+          >
+            <Icon className="text-4xl text-yellow-400" />
+            <span className="text-sm font-bold text-yellow-100">{name}</span>
           </div>
-          <span className="text-md font-semibold ml-4">99%</span>
-        </div>
-
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-css3 text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">CSS</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[1] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="99%"
-              ></div>
-            </div>
-          </div>
-          <span className="text-md font-semibold ml-4">99%</span>
-        </div>
-
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-javascript text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">JavaScript</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[2] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="99%"
-              ></div>
-            </div>
-          </div>
-          <span className="text-md font-semibold ml-4">99%</span>
-        </div>
-
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-typescript text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">TypeScript</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[3] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="99%"
-              ></div>
-            </div>
-          </div>
-          <span className="text-md font-semibold ml-4">99%</span>
-        </div>
-
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-react text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">Next.js</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[4] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="90%"
-              ></div>
-            </div>
-          </div>
-          <span className="text-md font-semibold ml-4">90%</span>
-        </div>
-
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-python text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">Python</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[5] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="95%"
-              ></div>
-            </div>
-          </div>
-          <span className="text-md font-semibold ml-4">95%</span>
-        </div>
-
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-tailwind-css text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">Tailwind CSS</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[6] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="99%"
-              ></div>
-            </div>
-          </div>
-          <span className="text-md font-semibold ml-4">99%</span>
-        </div>
-
-        <div className="flex items-center bg-gray-800 rounded-lg p-6 shadow-xl hover:bg-indigo-800 transition duration-300">
-          <i className="bx bxl-nodejs text-4xl text-indigo-400 mr-4"></i>
-          <div className="flex-1">
-            <span className="font-semibold text-xl">Node.js</span>
-            <div className="bg-gray-700 rounded-md overflow-hidden h-4 my-3">
-              <div
-                ref={(el) => {
-                  if (el) skillRefs.current[7] = el;
-                }}
-                className="h-full bg-gradient-to-r from-indigo-500 to-purple-600"
-                data-percentage="35%"
-              ></div>
-            </div>
-          </div>
-          <span className="text-md font-semibold ml-4">35%</span>
-        </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

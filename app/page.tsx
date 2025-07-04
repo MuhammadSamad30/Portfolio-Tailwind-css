@@ -5,7 +5,6 @@ import TypingEffect from "@/components/Typing";
 import About1 from "@/components/About";
 import Project1 from "@/components/Project";
 import Skills1 from "@/components/Skills";
-import ClientTestimonial from "@/components/ClientTestimonial";
 
 const Home = () => {
   return (
@@ -14,7 +13,7 @@ const Home = () => {
       mb-12 gap-10">
         <div className="flex flex-col justify-start gap-2 w-full md:w-[65%] md:mt-1 text-center md:text-left">
           <h3 className="text-lg md:text-[32px] m-0 p-0">Hey, It&apos;s me</h3>
-          <h1 className="text-lg md:text-[50px] text-[#b8b6cfd5] m-0 leading-snug p-0">
+          <h1 className="text-lg md:text-[50px] text-[#ffb703] m-0 leading-snug p-0">
             Muhammad Samad
           </h1>
           <h3 className="text-base md:text-[30px] m-0 p-0">
@@ -58,7 +57,7 @@ const Home = () => {
           </div>
 
           <a
-            href="/Muhammad-Samad-Resume.pdf"
+            href="/Muhammad_Samad.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 bg-[#727130] rounded-lg shadow-[0_0_1rem_hsl(180,100%,50%)] text-white font-semibold transition-all duration-300 hover:shadow-none w-full sm:max-w-[50%] md:max-w-[40%] lg:max-w-[30%] mx-auto md:mx-0 mt-0"
@@ -69,11 +68,11 @@ const Home = () => {
 
         <div className="flex justify-center items-center w-full md:w-[25%] mt-8 md:mt-0">
           <Image
-            src={"/home-pic.jpeg"}
+            src={"/home-pic.png"}
             alt="Muhammad Samad"
             width={500}
             height={500}
-            className="w-full max-w-[300px] md:max-w-[350px] lg:max-w-[400px] rounded-lg shadow-[0_0_8rem_hsl(303,97%,27%)] transition-all duration-300 ease-in-out hover:shadow-none hover:scale-110"
+            className="w-full max-w-[300px] md:max-w-[350px] lg:max-w-[400px] rounded-lg duration-300 ease-in-out"
           />
         </div>
       </div>
@@ -81,20 +80,16 @@ const Home = () => {
       <About1 />
 
       <div>
-        <h1 className="flex justify-center text-[30px] md:text-[45px] font-semibold p-[1px] text-[#399fc7] font-sans mt-8">
-          Pro<span className="text-[#5e3bee]">ject</span>
+        <h1 className="flex justify-center text-[30px] md:text-[45px] font-black p-[1px] text-[#ffb703] font-sans mt-8">
+          Featured Projects
         </h1>
         <Project1 />
       </div>
 
       <div className="w-full">
-        <h1 className="flex justify-center text-[25px] md:text-[35px] font-black p-[1px] text-[#399fc7] font-sans mt-8">
-          <span className="text-[#2575fc] p-[1px]">My</span>&nbsp;Expertise
+        <h1 className="flex justify-center text-[30px] md:text-[35px] font-black p-[1px] text-[#ffb703] font-sans mt-8">My&nbsp;Expertise
         </h1>
         <Skills1 />
-      </div>
-      <div className="w-full">
-        <ClientTestimonial />
       </div>
     </div>
   );

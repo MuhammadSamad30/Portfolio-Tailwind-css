@@ -1,5 +1,6 @@
 "use client";
 import "boxicons/css/boxicons.min.css";
+import { MdTranslate } from "react-icons/md";
 
 const ProjectsAll = () => {
   const projectCategories = {
@@ -139,62 +140,71 @@ const ProjectsAll = () => {
           link: "https://bmi-calculator-by-samad.streamlit.app/",
           icon: "bx bxs-heart",
         },
-        // {
-        //   title: "Expense Tracker",
-        //   description:
-        //     "Track your expenses and manage your budget effectively with this simple tool.",
-        //   link: "https://expense-tracker-by-samad.streamlit.app/",
-        //   icon: "bx bx-wallet-alt",
-        // },
-        // {
-        //   title: "ChatGPT Clone",
-        //   description:
-        //     "ChatGPT Clone using Python and Streamlit with responsive ness and back-end functionality!",
-        //   link: "https://chatgpt-clone-by-samad.streamlit.app/",
-        //   icon: "bx bxs-bot",
-
-        // }
+        {
+          title: "Translator Agent",
+          description:
+            "A powerful translator agent that can translate text between multiple languages.",
+          link: "https://translator-agent-by-samad.streamlit.app/",
+          icon: <MdTranslate/>,
+        },
+        {
+          title: "Multi Mode ChatBot",
+          description:
+            "A versatile chatbot that can handle multiple conversation modes.",
+          link: "https://multi-mode-chatbot-by-samad.streamlit.app/",
+          icon: "bx bxs-chat",
+        }
       ],
     },
   };
 
   return (
-    <div className="p-8 bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen">
-      <h2 className="text-4xl font-extrabold text-center mb-12 text-white drop-shadow-lg">
-        All <span className="text-[#ad9bf7]">P</span>rojects
+    <div className="p-8 bg-gradient-to-b from-gray-950 to-gray-800 min-h-screen">
+      <h2 className="text-5xl font-extrabold text-center mb-16 text-[#fbb703] drop-shadow-2xl tracking-tight">
+        All Projects
       </h2>
-      
-      {Object.entries(projectCategories).map(([key, category]) => (
-        <div key={key} className="mb-16">
-          <h3 className="text-3xl font-bold text-white mb-8 pl-4 border-l-4 border-[#ad9bf7]">
-            {category.title}
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-            {category.projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-r from-purple-500/10 to-indigo-600/10 backdrop-blur-sm border border-purple-500/20 text-white p-6 rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-purple-500/40"
-              >
-                <h3 className="text-2xl font-semibold flex items-center gap-3 mb-3">
-                  <i className={`bx ${project.icon} text-3xl text-[#ad9bf7]`}></i>
-                  {project.title}
-                </h3>
-                <p className="text-gray-300 text-sm leading-5 mb-4">
-                  {project.description}
-                </p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:translate-y-[-2px]"
+      <div className="space-y-20">
+        {Object.entries(projectCategories).map(([key, category]) => (
+          <section key={key}>
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-2 h-10 bg-[#fbb703] rounded-full" />
+              <h3 className="text-3xl font-bold text-white tracking-wide">
+                {category.title}
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10">
+              {category.projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="relative group bg-gradient-to-br from-[#2d2a4a] to-[#1a1833] border border-[#fbb70333] rounded-3xl shadow-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-yellow-500/20"
                 >
-                  View Project
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-[#fbb70322] pointer-events-none" />
+                  <div className="p-8 flex flex-col h-full">
+                    <div className="flex items-center gap-4 mb-4">
+                      {typeof project.icon === "string" ? (
+                        <i className={`bx ${project.icon} text-4xl text-[#fbb703] drop-shadow-lg`} />
+                      ) : (
+                        <span className="text-4xl text-[#fbb703] drop-shadow-lg">{project.icon}</span>
+                      )}
+                      <span className="text-xl font-semibold text-white">{project.title}</span>
+                    </div>
+                    <p className="text-gray-300 text-base mb-6 flex-1">{project.description}</p>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-auto inline-flex items-center gap-2 bg-[#fbb703] text-gray-900 px-6 py-2 rounded-full font-bold shadow-md transition-all duration-200 hover:bg-[#ffb703] hover:scale-105"
+                    >
+                      <span>View Project</span>
+                      <i className="bx bx-right-arrow-alt text-xl" />
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
     </div>
   );
 };
