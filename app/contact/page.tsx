@@ -3,7 +3,7 @@ import Contact1 from "@/components/Contact"
 const Contact = () => {
   return (
     <div>
-      <h2 className="flex justify-center text-[30px] font-semibold p-[1px] text-[#acd7e7] font-sans"><span className="text-[#98afca]">Cont</span>act Us</h2>
+      <h2 className="flex justify-center text-[30px] font-black p-[1px] text-[#fbb703] font-sans">Contact Us</h2>
       <Contact1/>
     </div>
   )
