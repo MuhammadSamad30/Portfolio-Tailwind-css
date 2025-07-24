@@ -54,7 +54,7 @@ const ProjectsAll = () => {
       projects: [
         {
           title: "MindMate AI Chatbot",
-          description:"A Next.js project with AI chatbot functionality.",
+          description:"AI chatbot functionality. ",
           link: "https://mindmate-ai-chatbot.vercel.app/",
           icon: "bx bxs-bot"
         },
