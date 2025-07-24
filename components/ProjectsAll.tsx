@@ -153,7 +153,13 @@ const ProjectsAll = () => {
             "A versatile chatbot that can handle multiple conversation modes.",
           link: "https://multi-mode-chatbot-by-samad.streamlit.app/",
           icon: "bx bxs-chat",
-        }
+        },
+        {
+          title: "Universal Downloader",
+          description: "Download videos from various platforms with ease.",
+          link: "https://video-downloader-by-samad.streamlit.app/",
+          icon: "bx bxs-video",
+  }
       ],
     },
   };
