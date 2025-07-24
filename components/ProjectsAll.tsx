@@ -39,14 +39,7 @@ const ProjectsAll = () => {
           description: "A simple Currency Converter app built using JavaScript.",
           link: "https://muhammad-samad-currency-convertor.vercel.app/",
           icon: "bxl-bitcoin",
-        },
-        {
-          title: "Virtual Assistant",
-          description:
-            "This project is based on voice commands and can answer anything you want!",
-          link: "https://virtual-assistant-js-by-samad.vercel.app/",
-          icon: "bx-brain",
-        },
+        }
       ],
     },
     nextjs: {
