@@ -46,12 +46,6 @@ const ProjectsAll = () => {
       title: "Next.js Projects",
       projects: [
         {
-          title: "MindMate AI Chatbot",
-          description:"AI chatbot functionality. ",
-          link: "https://mindmate-ai-chatbot.vercel.app/",
-          icon: "bx bxs-bot"
-        },
-        {
           title: "E-Com Website",
           description:
             "E-commerce Website with responsive ness and Shopping cart functionality!",
