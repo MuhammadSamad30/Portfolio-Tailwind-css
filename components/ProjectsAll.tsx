@@ -67,13 +67,6 @@ const ProjectsAll = () => {
           icon: "bx-store",
         },
         {
-          title: "ExamQuiz.io",
-          description:
-            "a platform to test your knowledge. Start your quiz and challenge yourself with different levels of difficulty",
-          link: "https://exam-quiz-io-muhammad-samad.vercel.app/",
-          icon: "bx bx-laptop",
-        },
-        {
           title: "E-Com Back-End",
           description:
             "E-commerce Website with responsive ness and back-end functionality!",
