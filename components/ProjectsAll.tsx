@@ -36,15 +36,23 @@ const ProjectsAll = () => {
         },
         {
           title: "Currency Converter",
-          description: "A simple Currency Converter app built using JavaScript.",
+          description:
+            "A simple Currency Converter app built using JavaScript.",
           link: "https://muhammad-samad-currency-convertor.vercel.app/",
           icon: "bxl-bitcoin",
-        }
+        },
       ],
     },
     nextjs: {
       title: "Next.js Projects",
       projects: [
+        {
+          title: "SmartCalc Hub",
+          description:
+            "Featuring multiple calculation modes including 10+ Calculators.",
+          link: "https://smartcalc-hub.vercel.app/",
+          icon: "bx bxs-calculator",
+        },
         {
           title: "E-Com Website",
           description:
@@ -79,7 +87,7 @@ const ProjectsAll = () => {
             "Ball jumping Game like Offline Chrome Dino Game Using NextJs and Tailwind CSS",
           link: "https://dino-clone-game-by-samad.vercel.app/",
           icon: "bx bxs-basketball",
-        }
+        },
       ],
     },
     python: {
@@ -125,7 +133,7 @@ const ProjectsAll = () => {
           description:
             "A powerful translator agent that can translate text between multiple languages.",
           link: "https://translator-agent-by-samad.streamlit.app/",
-          icon: <MdTranslate/>,
+          icon: <MdTranslate />,
         },
         {
           title: "Multi Mode ChatBot",
@@ -139,7 +147,7 @@ const ProjectsAll = () => {
           description: "Download videos from various platforms with ease.",
           link: "https://video-downloader-by-samad.streamlit.app/",
           icon: "bx bxs-video",
-  }
+        },
       ],
     },
   };
@@ -168,13 +176,21 @@ const ProjectsAll = () => {
                   <div className="p-8 flex flex-col h-full">
                     <div className="flex items-center gap-4 mb-4">
                       {typeof project.icon === "string" ? (
-                        <i className={`bx ${project.icon} text-4xl text-[#fbb703] drop-shadow-lg`} />
+                        <i
+                          className={`bx ${project.icon} text-4xl text-[#fbb703] drop-shadow-lg`}
+                        />
                       ) : (
-                        <span className="text-4xl text-[#fbb703] drop-shadow-lg">{project.icon}</span>
+                        <span className="text-4xl text-[#fbb703] drop-shadow-lg">
+                          {project.icon}
+                        </span>
                       )}
-                      <span className="text-xl font-semibold text-white">{project.title}</span>
+                      <span className="text-xl font-semibold text-white">
+                        {project.title}
+                      </span>
                     </div>
-                    <p className="text-gray-300 text-base mb-6 flex-1">{project.description}</p>
+                    <p className="text-gray-300 text-base mb-6 flex-1">
+                      {project.description}
+                    </p>
                     <a
                       href={project.link}
                       target="_blank"

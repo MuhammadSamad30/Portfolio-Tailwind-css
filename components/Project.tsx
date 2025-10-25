@@ -4,29 +4,29 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const projectData = [
   {
+    title: "SmartCalc Hub",
+    description:
+      "Featuring multiple calculation modes including 10+ Calculators.",
+    link: "https://smartcalc-hub.vercel.app/",
+    icon: "bx bxs-calculator",
+  },
+  {
     title: "Resume Builder",
     icon: "bx bxs-spreadsheet",
     description: "A responsive Resume Builder website built with HTML, CSS, and TypeScript.",
     link: "https://shareable-resume-builder-by-samad.vercel.app/"
   },
   {
+    title: "Gemini Clone",
+    icon: "bx bxs-bot",
+    description: "Google Gemini Clone with Responsiveness and Pixel Perfect Design",
+    link: "https://google-gemini-clone-by-samad.vercel.app/"
+  },
+  {
     title: "E-Com Website",
     icon: "bx bxs-store-alt",
     description: "E-commerce Website with responsive ness and Shopping cart functionality!",
     link: "https://e-commerce-website-by-samad.vercel.app/"
-  },
-  {
-    title: "Blog App",
-    icon: "bx bxl-blogger",
-    description: "Blog App On Next Js 15 Introduction with Fully Responsive ness",
-    link: "https://basic-blog-app-by-samad.vercel.app/"
-  },
-  {
-    title: "E-Com Back-End",
-    description:
-      "E-commerce Website with responsive ness and back-end functionality!",
-    link: "https://e-commerce-back-end-hackathon-by-samad.vercel.app/",
-    icon: "bx bxl-shopify",
   },
 ];
 
