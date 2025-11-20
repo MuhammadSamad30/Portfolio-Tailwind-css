@@ -9,8 +9,10 @@ import Skills1 from "@/components/Skills";
 const Home = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-col md:flex-row items-center justify-center p-5 mt-12
-      mb-12 gap-10">
+      <div
+        className="flex flex-col md:flex-row items-center justify-center p-5 mt-12
+      mb-12 gap-10"
+      >
         <div className="flex flex-col justify-start gap-2 w-full md:w-[65%] md:mt-1 text-center md:text-left">
           <h3 className="text-lg md:text-[32px] m-0 p-0">Hey, It&apos;s me</h3>
           <h1 className="text-lg md:text-[50px] text-[#ffb703] m-0 leading-snug p-0">
@@ -18,7 +20,10 @@ const Home = () => {
           </h1>
           <h3 className="text-base md:text-[30px] m-0 p-0">
             And I&apos;m a{" "}
-            <span id="multi-text" className="text-[12px] md:text-base text-white">
+            <span
+              id="multi-text"
+              className="text-[12px] md:text-base text-white"
+            >
               <TypingEffect />
             </span>
           </h3>
@@ -87,7 +92,8 @@ const Home = () => {
       </div>
 
       <div className="w-full">
-        <h1 className="flex justify-center text-[30px] md:text-[35px] font-black p-[1px] text-[#ffb703] font-sans mt-8">My&nbsp;Expertise
+        <h1 className="flex justify-center text-[30px] md:text-[35px] font-black p-[1px] text-[#ffb703] font-sans mt-8">
+          My&nbsp;Expertise
         </h1>
         <Skills1 />
       </div>
