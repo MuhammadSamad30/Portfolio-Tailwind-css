@@ -27,7 +27,7 @@ const About1 = () => {
           </div>
           
           <p className="text-lg text-slate-400 leading-relaxed italic">
-            "My journey in technology is driven by curiosity and a commitment to excellence. As an aspiring developer, I&apos;ve immersed myself in the modern web ecosystem, mastering tools like Next.js and Python to transform complex ideas into elegant digital experiences. I thrive on solving challenging problems and am always eager to embrace the next wave of technological innovation."
+            &quot;My journey in technology is driven by curiosity and a commitment to excellence. As an aspiring developer, I&apos;ve immersed myself in the modern web ecosystem, mastering tools like Next.js and Python to transform complex ideas into elegant digital experiences. I thrive on solving challenging problems and am always eager to embrace the next wave of technological innovation.&quot;
           </p>
 
           <div className="grid grid-cols-2 gap-4 mt-4">
