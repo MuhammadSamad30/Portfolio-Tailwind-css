@@ -4,16 +4,19 @@ const TypingEffect = () => {
   return (
     <TypeAnimation
       sequence={[
-        'Front-end Developer',
+        'Full-Stack Developer',
         1000,
-        'Graphic Designer',
+        'Next.js Specialist',
         1000,
         'UI/UX Designer',
+        1000,
+        'Tech Enthusiast',
         1000
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '2em', display: 'inline-block', color: '#ffb703' }}
+      style={{ display: 'inline-block' }}
+      className="text-emerald-400"
       repeat={Infinity}
     />
   );

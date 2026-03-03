@@ -1,43 +1,89 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Projects", href: "/projects" },
+    { label: "Skills", href: "/skills" },
+    { label: "Contact", href: "/contact" },
+  ];
+
   return (
-    <nav className="bg-[#0e0e0e] text-[#fbb703] p-3 px-6 flex items-center justify-between relative">
-      <h1 className="text-xl font-bold sm:text-2xl">Portfolio</h1>
+    <nav 
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-slate-950/80 backdrop-blur-md py-3 shadow-lg" : "bg-transparent py-5"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <Link href="/" className="text-2xl font-black text-gradient">
+          SAMAD
+        </Link>
 
-      <button
-        onClick={toggleMenu}
-        className="text-2xl sm:hidden absolute top-3 right-5"
-      >
-        &#9776;
-      </button>
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex items-center gap-8">
+          {navLinks.map((item) => (
+            <li key={item.href}>
+              <Link 
+                href={item.href}
+                className={`text-sm font-medium transition-colors hover:text-emerald-400 ${
+                  pathname === item.href ? "text-emerald-400" : "text-slate-300"
+                }`}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-      <ul
-        className={`${
-          isOpen ? "flex" : "hidden"
-        } flex-col sm:flex sm:flex-row gap-5 items-center sm:gap-8 absolute sm:static top-14 left-0 w-full sm:w-auto bg-[#222] sm:bg-transparent z-10 py-4 sm:py-0`}
+        {/* Mobile Menu Button */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-2xl text-slate-300 hover:text-white transition-colors"
+        >
+          {isOpen ? <i className="bx bx-x"></i> : <i className="bx bx-menu"></i>}
+        </button>
+      </div>
+
+      {/* Mobile Nav */}
+      <div
+        className={`md:hidden absolute top-full left-0 w-full glass transition-all duration-300 origin-top ${
+          isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
+        }`}
       >
-        {[
-          { label: "Home", href: "/" },
-          { label: "About", href: "/about" },
-          { label: "Project", href: "/project" },
-          { label: "Skills", href: "/skills" },
-          { label: "Contact", href: "/contact" },
-        ].map((item) => (
-          <li
-            key={item.href}
-            className="text-lg font-semibold hover:text-white transition-all duration-200"
-          >
-            <Link href={item.href}>{item.label}</Link>
-          </li>
-        ))}
-      </ul>
+        <ul className="flex flex-col p-6 gap-4">
+          {navLinks.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className={`text-lg font-medium block transition-colors hover:text-emerald-400 ${
+                  pathname === item.href ? "text-emerald-400" : "text-slate-300"
+                }`}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };
