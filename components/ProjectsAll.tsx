@@ -1,13 +1,15 @@
 "use client";
 import "boxicons/css/boxicons.min.css";
 import { MdTranslate } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa6";
 
 const ProjectsAll = () => {
   const projectCategories = {
     nextjs: {
       title: "Next.js & Full-Stack",
       accent: "text-emerald-400",
-      border: "border-emerald-500/20",
+      bgAccent: "bg-emerald-400",
+      border: "border-emerald-500/30",
       projects: [
         {
           title: "SmartCalc Hub",
@@ -19,19 +21,19 @@ const ProjectsAll = () => {
           title: "E-Com Website",
           description: "E-commerce Website with responsiveness and Shopping cart functionality!",
           link: "https://e-commerce-website-by-samad.vercel.app/",
-          icon: "bxs-store-alt",
+          icon: "bx bxs-store-alt",
         },
         {
           title: "Blog App",
           description: "Blog App On Next Js 15 Introduction with Fully Responsiveness.",
           link: "https://basic-blog-app-by-samad.vercel.app/",
-          icon: "bxl-blogger",
+          icon: "bx bxl-blogger",
         },
         {
           title: "E-Com Hackathon",
           description: "Figma to E-Commerce Website Pixel perfect with Responsiveness!",
           link: "https://e-commerce-hackathon-by-samad.vercel.app/",
-          icon: "bx-store",
+          icon: "bx bx-store",
         },
         {
           title: "E-Com Back-End",
@@ -50,7 +52,8 @@ const ProjectsAll = () => {
     python: {
       title: "Python & Automation",
       accent: "text-cyan-400",
-      border: "border-cyan-500/20",
+      bgAccent: "bg-cyan-400",
+      border: "border-cyan-500/30",
       projects: [
         {
           title: "File converter",
@@ -105,7 +108,8 @@ const ProjectsAll = () => {
     frontend: {
       title: "Modern Frontend",
       accent: "text-emerald-400",
-      border: "border-emerald-500/20",
+      bgAccent: "bg-emerald-400",
+      border: "border-emerald-500/30",
       projects: [
         {
           title: "Gemini Clone",
@@ -143,36 +147,36 @@ const ProjectsAll = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-6 pb-20">
-      <div className="space-y-32">
+      <div className="space-y-24 md:space-y-32">
         {Object.entries(projectCategories).map(([key, category]) => (
-          <section key={key}>
+          <section key={key} className="animate-fadeIn">
             <div className="flex flex-col mb-12">
-              <h3 className={`text-3xl font-bold mb-4 ${category.accent}`}>
+              <h3 className={`text-2xl sm:text-3xl font-black mb-4 tracking-tight ${category.accent}`}>
                 {category.title}
               </h3>
-              <div className="w-20 h-1 bg-slate-800 rounded-full">
-                <div className={`h-full w-1/2 rounded-full ${category.accent.replace('text', 'bg')}`}></div>
+              <div className="w-20 h-1.5 bg-slate-800/50 rounded-full overflow-hidden">
+                <div className={`h-full w-1/2 rounded-full ${category.bgAccent}`}></div>
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {category.projects.map((project, index) => (
                 <div
                   key={index}
-                  className={`group glass p-8 rounded-[2rem] transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between border-slate-800/50 hover:${category.border}`}
+                  className={`group glass p-6 sm:p-8 rounded-[2rem] transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between border-slate-800/50 hover:${category.border}`}
                 >
                   <div>
                     <div className={`w-14 h-14 glass rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-all duration-500 ${category.accent}`}>
                       {typeof project.icon === "string" ? (
-                        <i className={project.icon.startsWith('bx') ? project.icon : `bx ${project.icon}`} />
+                        <i className={project.icon} />
                       ) : (
                         project.icon
                       )}
                     </div>
-                    <h4 className="text-xl font-bold mb-4 group-hover:text-white transition-colors">
+                    <h4 className="text-xl font-bold mb-3 group-hover:text-white transition-colors">
                       {project.title}
                     </h4>
-                    <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-1">
+                    <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-8 flex-1">
                       {project.description}
                     </p>
                   </div>
@@ -180,9 +184,10 @@ const ProjectsAll = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-full py-3 text-center glass rounded-xl font-bold transition-all duration-300 hover:text-slate-950 ${category.accent.replace('text', 'hover:bg')}`}
+                    className={`w-full py-4 text-center glass rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 hover:text-slate-950 ${category.bgAccent.replace('bg-', 'hover:bg-')}`}
                   >
                     View Project
+                    <FaArrowRight className="text-xs transition-transform group-hover:translate-x-1" />
                   </a>
                 </div>
               ))}
@@ -195,3 +200,4 @@ const ProjectsAll = () => {
 };
 
 export default ProjectsAll;
+

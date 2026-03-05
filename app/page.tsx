@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import "boxicons/css/boxicons.min.css";
 import TypingEffect from "@/components/Typing";
 import About1 from "@/components/About";
 import Project1 from "@/components/Project";
@@ -10,38 +9,38 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen flex items-center justify-center pt-20 pb-12 overflow-hidden">
+      <section className="relative w-full min-h-[90vh] md:min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
         {/* Decorative background elements */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-500/10 rounded-full blur-[100px] -z-10"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-500/10 rounded-full blur-[100px] -z-10"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-500/10 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-500/10 rounded-full blur-[100px] -z-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
         
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col gap-6 text-center lg:text-left animate-fadeIn">
-            <div>
-              <h3 className="text-xl md:text-2xl font-medium text-emerald-400 mb-2">Hey, it&apos;s me</h3>
-              <h1 className="text-5xl md:text-7xl font-black mb-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="flex flex-col gap-6 text-center lg:text-left animate-fadeIn order-2 lg:order-1">
+            <div className="space-y-2">
+              <h3 className="text-lg md:text-2xl font-semibold text-emerald-400">Hey, it&apos;s me</h3>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
                 Muhammad Samad
               </h1>
-              <div className="text-2xl md:text-4xl font-bold flex items-center justify-center lg:justify-start gap-3">
-                <span>I&apos;m a</span>
+              <div className="text-xl sm:text-2xl md:text-4xl font-bold flex items-center justify-center lg:justify-start gap-3">
+                <span className="text-slate-300">I&apos;m a</span>
                 <TypingEffect />
               </div>
             </div>
             
-            <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              I&apos;m a passionate Full-Stack Developer and lifelong learner, dedicated to crafting high-performance web applications. Currently honing my skills at the Governor&apos;s Sindh IT Initiative, I specialize in building modern, scalable solutions using Next.js, TypeScript, and Python.
+            <p className="text-base md:text-lg lg:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              I&apos;m a passionate <span className="text-white font-medium">Full-Stack Developer</span> and lifelong learner, dedicated to crafting high-performance web applications. I specialize in building modern, scalable solutions using <span className="text-emerald-400">Next.js</span>, <span className="text-cyan-400">TypeScript</span>, and <span className="text-emerald-400">Python</span>.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-4">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-5 mt-4">
               <a
                 href="/Muhammad_Samad.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold rounded-full transition-all duration-300 shadow-lg shadow-emerald-500/20 active:scale-95"
+                className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold rounded-2xl transition-all duration-300 shadow-lg shadow-emerald-500/20 active:scale-95 text-center w-full sm:w-auto"
               >
-                Get Resume
+                Download Resume
               </a>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-4">
                 {[
                   { icon: "bx bxl-github", href: "https://github.com/MuhammadSamad30" },
                   { icon: "bx bxl-linkedin", href: "https://www.linkedin.com/in/muhammad-samad-6b0190290/" },
@@ -52,7 +51,7 @@ const Home = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 flex items-center justify-center glass rounded-full text-2xl text-slate-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-all"
+                    className="w-12 h-12 flex items-center justify-center glass rounded-xl text-2xl text-slate-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-all hover:-translate-y-1"
                   >
                     <i className={social.icon}></i>
                   </a>
@@ -61,15 +60,15 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="relative flex justify-center items-center group animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 to-cyan-500/20 rounded-2xl blur-2xl group-hover:blur-3xl transition-all"></div>
-            <div className="relative glass p-4 rounded-3xl border-slate-700/50 rotate-3 group-hover:rotate-0 transition-transform duration-500">
+          <div className="relative flex justify-center items-center group animate-fadeIn order-1 lg:order-2" style={{ animationDelay: '0.2s' }}>
+            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 to-cyan-500/20 rounded-full blur-3xl group-hover:blur-[50px] transition-all duration-700"></div>
+            <div className="relative glass p-3 sm:p-4 rounded-[2.5rem] border-slate-700/50 lg:rotate-3 group-hover:rotate-0 transition-transform duration-700 ease-out shadow-2xl">
               <Image
                 src={"/home-pic.png"}
                 alt="Muhammad Samad"
                 width={500}
                 height={500}
-                className="w-full max-w-[350px] md:max-w-[450px] rounded-2xl"
+                className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] rounded-[2rem] object-cover"
                 priority
               />
             </div>
@@ -77,21 +76,25 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="w-full max-w-7xl px-6 py-20 space-y-32">
+      <div className="w-full max-w-7xl px-6 md:px-12 py-16 md:py-32 space-y-24 md:space-y-48">
         <About1 />
         
-        <section>
-          <div className="flex flex-col items-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-black text-center mb-4">Featured <span className="text-emerald-400">Projects</span></h2>
-            <div className="w-24 h-1 bg-emerald-500 rounded-full"></div>
+        <section id="projects" className="scroll-mt-32">
+          <div className="flex flex-col items-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-4 tracking-tight">
+              Featured <span className="text-emerald-400">Projects</span>
+            </h2>
+            <div className="w-20 h-1.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
           </div>
           <Project1 />
         </section>
 
-        <section>
-          <div className="flex flex-col items-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-black text-center mb-4">My <span className="text-emerald-400">Expertise</span></h2>
-            <div className="w-24 h-1 bg-emerald-500 rounded-full"></div>
+        <section id="skills" className="scroll-mt-32">
+          <div className="flex flex-col items-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-4 tracking-tight">
+              My <span className="text-emerald-400">Expertise</span>
+            </h2>
+            <div className="w-20 h-1.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
           </div>
           <Skills1 />
         </section>
