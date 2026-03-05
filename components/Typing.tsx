@@ -4,14 +4,12 @@ const TypingEffect = () => {
   return (
     <TypeAnimation
       sequence={[
-        'Full-Stack Developer',
+        'Front-End Developer',
         1000,
         'Next.js Specialist',
         1000,
         'UI/UX Designer',
         1000,
-        'Tech Enthusiast',
-        1000
       ]}
       wrapper="span"
       speed={50}
