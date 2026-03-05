@@ -1,19 +1,19 @@
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 
 const TypingEffect = () => {
   return (
     <TypeAnimation
       sequence={[
-        'Front-End Developer',
+        "Front-End Developer",
         1000,
-        'Next.js Specialist',
+        "Next.js Specialist",
         1000,
-        'UI/UX Designer',
+        "UI/UX Designer",
         1000,
       ]}
       wrapper="span"
       speed={50}
-      style={{ display: 'inline-block' }}
+      style={{ display: "inline-block" }}
       className="text-emerald-400"
       repeat={Infinity}
     />
