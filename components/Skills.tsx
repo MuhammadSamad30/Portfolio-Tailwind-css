@@ -1,5 +1,4 @@
 "use client";
-import { RiReactjsLine } from "react-icons/ri";
 import { BiLogoFigma } from "react-icons/bi";
 import { GrUserWorker } from "react-icons/gr";
 import { LuScanSearch } from "react-icons/lu";
