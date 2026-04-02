@@ -5,11 +5,11 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const projectData = [
   {
-    title: "Transfer AnyThing",
-    icon: "bx bx-share",
+    title: "Age Calculator",
     description:
-      "The most private way to share files. No tracking, no permanent storage, just pure end-to-end security.",
-    link: "https://transferx-file.vercel.app/",
+      "A web application to calculate your exact age in years, months, and days.",
+    link: "https://age-calculator-delta-pearl.vercel.app/",
+    icon: "bx bx-calculator",
     color: "cyan",
   },
   {

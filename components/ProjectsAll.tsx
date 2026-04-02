@@ -12,13 +12,6 @@ const ProjectsAll = () => {
       border: "border-emerald-500/30",
       projects: [
         {
-          title: "Transfer AnyThing",
-          description:
-            "The most private way to share files. No tracking, no permanent storage, just pure end-to-end security.",
-          link: "https://transferx-file.vercel.app/",
-          icon: "bx bx-share",
-        },
-        {
           title: "SmartCalc Hub",
           description:
             "Featuring multiple calculation modes including 10+ Calculators.",
