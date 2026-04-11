@@ -1,4 +1,5 @@
 "use client";
+import { TbBrandReactNative } from "react-icons/tb";
 import { BiLogoFigma } from "react-icons/bi";
 import { GrUserWorker } from "react-icons/gr";
 import { LuScanSearch } from "react-icons/lu";
@@ -30,6 +31,7 @@ const skills = [
   { name: "Python", icon: SiPython, color: "text-emerald-400" },
   { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
   { name: "React", icon: SiReact, color: "text-cyan-300" },
+  { name: "React Native", icon: TbBrandReactNative, color: "text-cyan-300" },
   { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
   { name: "Git", icon: SiGit, color: "text-orange-600" },
   { name: "GitHub", icon: SiGithub, color: "text-white" },
@@ -66,4 +68,3 @@ const Skills1 = () => {
 };
 
 export default Skills1;
-
