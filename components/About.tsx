@@ -12,7 +12,7 @@ const About1 = () => {
           <div className="absolute inset-0 bg-emerald-500/20 rounded-3xl blur-2xl"></div>
           <div className="relative p-2 glass rounded-[2rem] border-slate-700/30">
             <Image
-              src={"/about-pic.jpg"}
+              src={"/about-pic.png"}
               alt="Muhammad Samad"
               width={500}
               height={500}
