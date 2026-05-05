@@ -142,7 +142,7 @@ const ProjectsAll = () => {
           title: "Age Calculator",
           description:
             "A web application to calculate your exact age in years, months, and days.",
-          link: "https://age-calculator-delta-pearl.vercel.app/",
+          link: "https://age-calculator-muhammad-samad.vercel.app/",
           icon: "bx bx-calculator",
         },
         {
