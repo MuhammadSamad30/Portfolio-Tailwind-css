@@ -5,6 +5,14 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const projectData = [
   {
+    title: "TradingHub",
+    description:
+      "A comprehensive trading learning platform to learn forex trading easily, featuring Smart Money Concepts (SMC), strategies, and live trade proofs.",
+    link: "https://trade-material.vercel.app/",
+    icon: "bx bx-trending-up",
+    color: "emerald",
+  },
+  {
     title: "Age Calculator",
     description:
       "A web application to calculate your exact age in years, months, and days.",
