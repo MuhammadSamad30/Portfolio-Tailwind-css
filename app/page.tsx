@@ -4,7 +4,7 @@ import TypingEffect from "@/components/Typing";
 import About1 from "@/components/About";
 import Project1 from "@/components/Project";
 import Skills1 from "@/components/Skills";
-
+ 
 const Home = () => {
   return (
     <div className="flex flex-col items-center">
