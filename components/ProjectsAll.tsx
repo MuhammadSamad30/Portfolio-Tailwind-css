@@ -168,18 +168,11 @@ const ProjectsAll = () => {
           icon: "bx bx-calculator",
         },
         {
-          title: "ID Card Generator",
+          title: "MyIdentity.io",
           description: "Generate and download your personal ID card.",
-          link: "https://muhammad-samad-id-card-generator.vercel.app/",
+          link: "https://myidentity-io.vercel.app/",
           icon: "bx bx-id-card",
-        },
-        {
-          title: "Currency Converter",
-          description:
-            "A simple Currency Converter app built using JavaScript.",
-          link: "https://muhammad-samad-currency-convertor.vercel.app/",
-          icon: "bx bxl-bitcoin",
-        },
+        }
       ],
     },
   };
