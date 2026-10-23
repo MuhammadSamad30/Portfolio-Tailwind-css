@@ -68,6 +68,13 @@ const ProjectsAll = () => {
           link: "https://dino-clone-game-by-samad.vercel.app/",
           icon: "bx bxs-basketball",
         },
+        {
+          title: "Tasbeeh App",
+          description:
+            "A digital Tasbeeh app for keeping count of your daily dhikr.",
+          link: "https://tasbeeh-app-by-samad.vercel.app/",
+          icon: "bx bx-moon",
+        },
       ],
     },
     python: {

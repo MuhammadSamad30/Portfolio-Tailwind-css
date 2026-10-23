@@ -44,6 +44,14 @@ const projectData = [
     link: "https://google-gemini-clone-by-samad.vercel.app/",
     color: "emerald",
   },
+  {
+    title: "Tasbeeh App",
+    description:
+      "A digital Tasbeeh app for keeping count of your daily dhikr.",
+    link: "https://tasbeeh-app-by-samad.vercel.app/",
+    icon: "bx bx-moon",
+    color: "cyan",
+  },
 ];
 
 const Project1 = () => {
