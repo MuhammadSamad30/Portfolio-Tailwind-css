@@ -7,9 +7,9 @@ const ProjectsAll = () => {
   const projectCategories = {
     trading: {
       title: "Forex & Financial Education",
-      accent: "text-emerald-400",
-      bgAccent: "bg-emerald-400",
-      border: "border-emerald-500/30",
+      accent: "text-[#ff8968]",
+      bgAccent: "bg-[#ff7048]",
+      border: "border-[#ff7048]/30",
       projects: [
         {
           title: "TradingHub - Master Trading Concepts",
@@ -22,9 +22,9 @@ const ProjectsAll = () => {
     },
     nextjs: {
       title: "Next.js & Full-Stack",
-      accent: "text-emerald-400",
-      bgAccent: "bg-emerald-400",
-      border: "border-emerald-500/30",
+      accent: "text-[#ff8968]",
+      bgAccent: "bg-[#ff7048]",
+      border: "border-[#ff7048]/30",
       projects: [
         {
           title: "SmartCalc Hub",
@@ -79,9 +79,9 @@ const ProjectsAll = () => {
     },
     python: {
       title: "Python & Automation",
-      accent: "text-cyan-400",
-      bgAccent: "bg-cyan-400",
-      border: "border-cyan-500/30",
+      accent: "text-[#ff8968]",
+      bgAccent: "bg-[#ff7048]",
+      border: "border-[#ff7048]/30",
       projects: [
         {
           title: "File converter",
@@ -142,9 +142,9 @@ const ProjectsAll = () => {
     },
     frontend: {
       title: "Modern Frontend",
-      accent: "text-emerald-400",
-      bgAccent: "bg-emerald-400",
-      border: "border-emerald-500/30",
+      accent: "text-[#ff8968]",
+      bgAccent: "bg-[#ff7048]",
+      border: "border-[#ff7048]/30",
       projects: [
         {
           title: "Gemini Clone",
@@ -188,25 +188,25 @@ const ProjectsAll = () => {
     <div className="max-w-7xl mx-auto px-6 pb-20">
       {/* Featured Showcase Section: Forex Trading Learning Project */}
       <section className="mb-20 md:mb-28 animate-fadeIn">
-        <div className="relative group glass rounded-[2.5rem] p-6 sm:p-10 md:p-12 border-emerald-500/30 overflow-hidden shadow-2xl transition-all duration-500 hover:border-emerald-500/50">
+        <div className="relative group glass rounded-[2rem] p-6 sm:p-10 md:p-12 border-[#ff7048]/25 overflow-hidden shadow-2xl transition-all duration-500 hover:border-[#ff7048]/50">
           {/* Subtle Ambient Background Gradients */}
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none -z-10 group-hover:bg-emerald-500/20 transition-all duration-700"></div>
-          <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none -z-10 group-hover:bg-cyan-500/20 transition-all duration-700"></div>
+          <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-[#ff7048]/10 blur-[100px] transition-all duration-700 group-hover:bg-[#ff7048]/20"></div>
+          <div className="absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-[#ffb38e]/5 blur-[100px] transition-all duration-700 group-hover:bg-[#ffb38e]/10"></div>
 
           <div className="flex flex-col lg:flex-row items-stretch justify-between gap-10">
             {/* Left Content Column */}
             <div className="flex-1 flex flex-col justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs md:text-sm font-semibold mb-6 tracking-wide">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#ff7048]/30 bg-[#ff7048]/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-[#ff8968] md:text-sm">
+                  <span className="h-2 w-2 animate-pulse rounded-full bg-[#ff7048]"></span>
                   Featured Project Spotlight • Live Platform
                 </div>
 
-                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mb-4 text-white">
-                  TradingHub <span className="text-gradient">— Learn Forex Trading</span>
+                <h3 className="mb-4 text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl">
+                  TradingHub <span className="text-[#ff8968]">— Learn Forex Trading</span>
                 </h3>
 
-                <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-3xl">
+                <p className="mb-8 max-w-3xl text-base leading-relaxed text-slate-300 md:text-lg">
                   A comprehensive trading learning platform built to help anyone learn forex trading easily. Features structured modules covering beginner forex fundamentals, advanced Smart Money Concepts (SMC), high-probability market strategies, risk management, and verified trade proofs.
                 </p>
 
@@ -260,7 +260,7 @@ const ProjectsAll = () => {
                   href="https://trade-material.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-bold rounded-2xl transition-all duration-300 flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-500/20 active:scale-95 group/btn"
+                  className="accent-button group/btn shadow-lg shadow-[#ff7048]/10"
                 >
                   <span>Launch Live Demo</span>
                   <FaArrowRight className="text-sm transition-transform group-hover/btn:translate-x-1" />
@@ -269,9 +269,9 @@ const ProjectsAll = () => {
                   href="https://trade-material.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-3.5 glass hover:border-emerald-500/50 rounded-2xl text-xs sm:text-sm text-slate-300 hover:text-emerald-400 transition-all flex items-center gap-2 font-mono"
+                  className="glass flex items-center gap-2 rounded-2xl px-5 py-3.5 font-mono text-xs text-slate-300 transition-all hover:border-[#ff7048]/50 hover:text-[#ff8968] sm:text-sm"
                 >
-                  <i className="bx bx-link-external text-emerald-400 text-base"></i>
+                  <i className="bx bx-link-external text-[#ff8968] text-base"></i>
                   https://trade-material.vercel.app/
                 </a>
               </div>
@@ -286,8 +286,8 @@ const ProjectsAll = () => {
                     <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
                   </div>
-                  <span className="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span className="flex items-center gap-1.5 font-mono text-xs text-[#ff8968]">
+                    <span className="h-2 w-2 animate-pulse rounded-full bg-[#ff7048]"></span>
                     Platform Active
                   </span>
                 </div>
@@ -299,11 +299,11 @@ const ProjectsAll = () => {
                   </div>
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-slate-400">Domain</span>
-                    <span className="text-emerald-400 font-medium">Forex Education</span>
+                    <span className="font-medium text-[#ff8968]">Forex Education</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-slate-400">Learning Method</span>
-                    <span className="text-cyan-400 font-medium">SMC & Price Action</span>
+                    <span className="font-medium text-[#ff8968]">SMC & Price Action</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-slate-400">Target Level</span>
@@ -317,7 +317,7 @@ const ProjectsAll = () => {
 
                 <div className="pt-3 border-t border-slate-800">
                   <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 flex items-start gap-2.5">
-                    <i className="bx bxs-badge-check text-emerald-400 text-lg shrink-0 mt-0.5"></i>
+                    <i className="bx bxs-badge-check mt-0.5 shrink-0 text-lg text-[#ff8968]"></i>
                     <p className="text-xs text-slate-400 leading-relaxed">
                       Empowering aspiring traders with free guides, SMC setups, and risk management strategies.
                     </p>
@@ -349,7 +349,7 @@ const ProjectsAll = () => {
               {category.projects.map((project, index) => (
                 <div
                   key={index}
-                  className={`group glass p-6 sm:p-8 rounded-[2rem] transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between border-slate-800/50 hover:${category.border}`}
+                      className="group glass flex flex-col justify-between rounded-[1.5rem] border border-white/10 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#ff7048]/50 sm:p-8"
                 >
                   <div>
                     <div
@@ -372,7 +372,7 @@ const ProjectsAll = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-full py-4 text-center glass rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 hover:text-slate-950 ${category.bgAccent.replace("bg-", "hover:bg-")}`}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl border border-white/10 py-4 font-bold transition-all duration-300 hover:border-[#ff7048] hover:bg-[#ff7048] hover:text-slate-950"
                   >
                     View Project
                     <FaArrowRight className="text-xs transition-transform group-hover:translate-x-1" />

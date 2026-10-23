@@ -10,7 +10,6 @@ const projectData = [
       "A comprehensive trading learning platform to learn forex trading easily, featuring Smart Money Concepts (SMC), strategies, and live trade proofs.",
     link: "https://trade-material.vercel.app/",
     icon: "bx bx-trending-up",
-    color: "emerald",
   },
   {
     title: "Age Calculator",
@@ -18,7 +17,6 @@ const projectData = [
       "A web application to calculate your exact age in years, months, and days.",
     link: "https://age-calculator-muhammad-samad.vercel.app/",
     icon: "bx bx-calculator",
-    color: "cyan",
   },
   {
     title: "SmartCalc Hub",
@@ -26,7 +24,6 @@ const projectData = [
       "Featuring multiple calculation modes including 10+ Calculators.",
     link: "https://smartcalc-hub.vercel.app/",
     icon: "bx bxs-calculator",
-    color: "emerald",
   },
   {
     title: "Resume Builder",
@@ -34,7 +31,6 @@ const projectData = [
     description:
       "Build a Professional Resume in Minutes. Choose from 4+ Templates, Customize with Ease, and Download Your Perfect CV Instantly.",
     link: "https://shareable-resume-builder-by-samad.vercel.app/",
-    color: "cyan",
   },
   {
     title: "Gemini Clone",
@@ -42,7 +38,6 @@ const projectData = [
     description:
       "Google Gemini Clone with Responsiveness and Pixel Perfect Design",
     link: "https://google-gemini-clone-by-samad.vercel.app/",
-    color: "emerald",
   },
   {
     title: "Tasbeeh App",
@@ -50,28 +45,28 @@ const projectData = [
       "A digital Tasbeeh app for keeping count of your daily dhikr.",
     link: "https://tasbeeh-app-by-samad.vercel.app/",
     icon: "bx bx-moon",
-    color: "cyan",
   },
 ];
 
 const Project1 = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 xl:grid-cols-3 w-full">
       {projectData.map((project, index) => (
         <div
           key={index}
-          className="group glass p-6 sm:p-8 rounded-[2rem] transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/30 flex flex-col justify-between"
+          className="group relative flex min-h-[310px] flex-col justify-between overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#181817] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#ff7048]/50 sm:p-7"
         >
+          <span className="absolute right-6 top-6 font-mono text-xs text-white/30">0{index + 1}</span>
           <div>
             <div
-              className={`w-14 h-14 glass rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-all duration-500 ${project.color === "emerald" ? "text-emerald-400 group-hover:bg-emerald-500/10" : "text-cyan-400 group-hover:bg-cyan-500/10"}`}
+              className="mb-8 flex h-12 w-12 items-center justify-center rounded-xl border border-[#ff7048]/20 bg-[#ff7048]/10 text-2xl text-[#ff8968] transition group-hover:rotate-[-6deg] group-hover:bg-[#ff7048]/15"
             >
               <i className={project.icon}></i>
             </div>
-            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 group-hover:text-emerald-400 transition-colors">
+            <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-[#f4f0e8] transition-colors group-hover:text-[#ff8968]">
               {project.title}
             </h3>
-            <p className="text-slate-400 leading-relaxed mb-8 text-sm md:text-base">
+            <p className="mb-8 max-w-sm text-sm leading-7 text-[#a7a39b]">
               {project.description}
             </p>
           </div>
@@ -79,7 +74,7 @@ const Project1 = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className={`w-full py-4 text-center glass rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 ${project.color === "emerald" ? "hover:bg-emerald-500 hover:text-slate-950 hover:border-emerald-500" : "hover:bg-cyan-500 hover:text-slate-950 hover:border-cyan-500"}`}
+            className="flex w-full items-center justify-between rounded-xl border border-white/10 px-4 py-3.5 text-sm font-semibold text-[#d9d5ce] transition hover:border-[#ff7048]/60 hover:bg-[#ff7048] hover:text-[#17110f]"
           >
             Explore Project
             <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
@@ -87,20 +82,20 @@ const Project1 = () => {
         </div>
       ))}
 
-      <div className="group glass p-6 sm:p-8 rounded-[2rem] transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/30 flex flex-col justify-between border-dashed border-2 border-slate-700/50 bg-transparent min-h-[300px]">
+      <div className="flex min-h-[310px] flex-col justify-between rounded-[1.5rem] border border-dashed border-white/20 bg-transparent p-6 transition hover:border-[#ff7048]/60 sm:p-7">
         <div>
-          <div className="w-14 h-14 glass rounded-2xl flex items-center justify-center text-3xl text-slate-400 mb-6 group-hover:scale-110 group-hover:bg-emerald-500/10 group-hover:text-emerald-400 transition-all duration-500">
+          <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 text-2xl text-[#a7a39b]">
             <i className="bx bx-grid-alt"></i>
           </div>
-          <h3 className="text-2xl font-bold mb-3">View All Works</h3>
-          <p className="text-slate-400 leading-relaxed mb-8 text-sm md:text-base">
+          <h3 className="mb-3 text-xl font-bold text-[#f4f0e8]">More in the archive</h3>
+          <p className="mb-8 max-w-sm text-sm leading-7 text-[#a7a39b]">
             Interested in seeing more of my creative journey and technical
             projects?
           </p>
         </div>
         <Link
           href="/projects"
-          className="w-full py-4 text-center glass rounded-xl font-bold hover:bg-emerald-500 hover:text-slate-950 hover:border-emerald-500 transition-all duration-300 flex items-center justify-center gap-2"
+          className="flex w-full items-center justify-between rounded-xl border border-white/10 px-4 py-3.5 text-sm font-semibold text-[#d9d5ce] transition hover:border-[#ff7048]/60 hover:bg-[#ff7048] hover:text-[#17110f]"
         >
           See Full Portfolio
           <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />

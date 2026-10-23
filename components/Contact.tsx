@@ -46,62 +46,62 @@ const Contact1 = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div className="relative flex justify-center items-center group">
-        <div className="absolute inset-0 bg-emerald-500/10 rounded-2xl blur-3xl transition-all"></div>
+    <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 md:px-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-16">
+      <div className="relative hidden justify-center lg:flex">
         <Image
           src="/contact-pic.png"
           alt="Contact Me"
           width={500}
           height={500}
-          className="relative w-full max-w-md rounded-[2rem] border border-slate-700/50 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+          className="relative aspect-[.86] w-full max-w-md rounded-[1.5rem] border border-white/10 object-cover grayscale-[.2] transition-all duration-500 hover:grayscale-0"
         />
+        <div className="absolute bottom-6 left-6 rounded-xl border border-white/10 bg-[#10100f]/85 px-4 py-3 backdrop-blur"><p className="eyebrow">Currently open</p><p className="mt-1 text-sm text-white">For thoughtful collaborations</p></div>
       </div>
 
-      <div className="glass p-8 md:p-12 rounded-[2rem] relative overflow-hidden">
-        <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-500/5 rounded-full blur-3xl"></div>
+      <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#181817] p-6 sm:p-8 md:p-10">
         
         <form onSubmit={handleSubmit} className="relative flex flex-col gap-6">
-          <h2 className="text-2xl font-bold mb-2">Hire Me / Send a Message</h2>
+          <p className="eyebrow">Tell me what you&apos;re building</p>
+          <h2 className="mb-2 text-3xl font-bold tracking-tight text-[#f4f0e8]">Let&apos;s talk details.</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col gap-2">
-              <label className="text-sm font-medium text-slate-400 px-1">Full Name</label>
+              <label className="px-1 text-sm font-medium text-[#c7c2ba]">Full name</label>
               <input
                 type="text"
                 name="name"
-                placeholder="John Doe"
+                placeholder="Your name"
                 required
-                className="bg-slate-950/50 border border-slate-800 rounded-xl p-4 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 transition-all"
+                className="rounded-xl border border-white/10 bg-[#10100f] p-4 text-[#f4f0e8] placeholder:text-[#66615b] focus:border-[#ff7048]/70 focus:outline-none focus:ring-1 focus:ring-[#ff7048]/30"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-sm font-medium text-slate-400 px-1">Email Address</label>
+              <label className="px-1 text-sm font-medium text-[#c7c2ba]">Email address</label>
               <input
                 type="email"
                 name="email"
-                placeholder="john@example.com"
+                placeholder="you@example.com"
                 required
-                className="bg-slate-950/50 border border-slate-800 rounded-xl p-4 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 transition-all"
+                className="rounded-xl border border-white/10 bg-[#10100f] p-4 text-[#f4f0e8] placeholder:text-[#66615b] focus:border-[#ff7048]/70 focus:outline-none focus:ring-1 focus:ring-[#ff7048]/30"
               />
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-medium text-slate-400 px-1">Message</label>
+            <label className="px-1 text-sm font-medium text-[#c7c2ba]">Message</label>
             <textarea
               name="message"
               placeholder="Tell me about your project or job opportunity..."
               required
               rows={4}
-              className="bg-slate-950/50 border border-slate-800 rounded-xl p-4 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 transition-all resize-none"
+              className="resize-none rounded-xl border border-white/10 bg-[#10100f] p-4 text-[#f4f0e8] placeholder:text-[#66615b] focus:border-[#ff7048]/70 focus:outline-none focus:ring-1 focus:ring-[#ff7048]/30"
             />
           </div>
 
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full py-4 ${isSubmitting ? 'bg-emerald-800 cursor-not-allowed' : 'bg-emerald-500 hover:bg-emerald-600'} text-slate-950 font-bold rounded-xl transition-all duration-300 shadow-lg shadow-emerald-500/10 active:scale-[0.98] flex items-center justify-center gap-2`}
+            className={`flex w-full items-center justify-center gap-2 rounded-xl py-4 font-bold text-[#17110f] transition ${isSubmitting ? 'cursor-not-allowed bg-[#a44a31]' : 'bg-[#ff7048] hover:bg-[#ff8968]'}`}
           >
             <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
             <i className={`bx ${isSubmitting ? 'bx-loader-alt animate-spin' : 'bx-paper-plane'} text-xl`}></i>

@@ -23,41 +23,31 @@ import {
 } from "react-icons/si";
 
 const skills = [
-  { name: "HTML", icon: SiHtml5, color: "text-orange-500" },
-  { name: "CSS", icon: SiCss3, color: "text-blue-500" },
-  { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-400" },
-  { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
-  { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
-  { name: "Python", icon: SiPython, color: "text-emerald-400" },
-  { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
-  { name: "React", icon: SiReact, color: "text-cyan-300" },
-  { name: "React Native", icon: TbBrandReactNative, color: "text-cyan-300" },
-  { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
-  { name: "Git", icon: SiGit, color: "text-orange-600" },
-  { name: "GitHub", icon: SiGithub, color: "text-white" },
-  { name: "Sanity", icon: SiSanity, color: "text-red-500" },
-  { name: "Strapi", icon: SiStrapi, color: "text-indigo-500" },
-  { name: "Shadcn UI", icon: SiShadcnui, color: "text-white" },
-  { name: "Bootstrap", icon: FaBootstrap, color: "text-purple-600" },
-  { name: "Figma", icon: BiLogoFigma, color: "text-pink-400" },
-  { name: "Diligent", icon: GrUserWorker, color: "text-emerald-400" },
-  { name: "Analysis", icon: LuScanSearch, color: "text-cyan-400" },
-  { name: "Creative", icon: GiThink, color: "text-emerald-400" },
+  { name: "HTML", icon: SiHtml5 }, { name: "CSS", icon: SiCss3 },
+  { name: "Tailwind", icon: SiTailwindcss }, { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: SiTypescript }, { name: "Python", icon: SiPython },
+  { name: "Next.js", icon: SiNextdotjs }, { name: "React", icon: SiReact },
+  { name: "React Native", icon: TbBrandReactNative }, { name: "Node.js", icon: SiNodedotjs },
+  { name: "Git", icon: SiGit }, { name: "GitHub", icon: SiGithub },
+  { name: "Sanity", icon: SiSanity }, { name: "Strapi", icon: SiStrapi },
+  { name: "Shadcn UI", icon: SiShadcnui }, { name: "Bootstrap", icon: FaBootstrap },
+  { name: "Figma", icon: BiLogoFigma }, { name: "Diligent", icon: GrUserWorker },
+  { name: "Analysis", icon: LuScanSearch }, { name: "Creative", icon: GiThink },
 ];
 
 const Skills1 = () => {
   return (
-    <section className="bg-transparent py-8">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6">
-        {skills.map(({ name, icon: Icon, color }, idx) => (
+    <section className="py-2">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-4 xl:grid-cols-5">
+        {skills.map(({ name, icon: Icon }, idx) => (
           <div
             key={idx}
-            className="group glass p-6 sm:p-8 rounded-3xl flex flex-col items-center justify-center gap-4 transition-all duration-500 hover:border-emerald-500/40 hover:-translate-y-2 hover:bg-slate-800/40"
+            className="group flex min-h-[118px] items-center gap-4 rounded-2xl border border-white/10 bg-[#181817] p-4 transition duration-300 hover:-translate-y-1 hover:border-[#ff7048]/50 sm:min-h-[135px] sm:p-5"
           >
-            <div className={`text-4xl sm:text-5xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] ${color}`}>
+            <div className="text-3xl text-[#ff8968] transition duration-300 group-hover:scale-110 sm:text-4xl">
               <Icon />
             </div>
-            <span className="text-xs sm:text-sm font-bold text-slate-400 group-hover:text-white transition-colors text-center uppercase tracking-wider">
+            <span className="text-xs font-bold uppercase tracking-[.08em] text-[#c7c2ba] transition-colors group-hover:text-white sm:text-sm">
               {name}
             </span>
           </div>

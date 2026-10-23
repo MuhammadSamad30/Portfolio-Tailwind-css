@@ -2,10 +2,11 @@ import Skills1 from '@/components/Skills'
 
 const skills = () => {
   return (
-    <div className="pt-24 pb-12 min-h-screen">
-       <div className="flex flex-col items-center mb-12 px-6">
-        <h2 className="text-4xl md:text-5xl font-black text-center mb-4">Technical <span className="text-emerald-400">Expertise</span></h2>
-        <div className="w-24 h-1 bg-emerald-500 rounded-full"></div>
+    <div className="min-h-screen pb-12 pt-32">
+       <div className="mx-auto mb-12 max-w-7xl px-6 md:px-12">
+        <p className="eyebrow mb-4">Tools of the trade</p>
+        <h2 className="section-title">Technical range<span className="text-[#ff7048]">.</span></h2>
+        <p className="mt-4 max-w-xl text-[#a7a39b]">A flexible toolkit for taking an idea from first sketch to a working product.</p>
       </div>
       <div className="max-w-7xl mx-auto px-6">
         <Skills1/>
